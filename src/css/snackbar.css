@@ -1,0 +1,15 @@
+body{
+    width: auto;
+}
+
+form {
+width: 30%;
+}
+
+label{
+    padding: 10px;
+}
+
+button{
+    margin: 10px;
+}

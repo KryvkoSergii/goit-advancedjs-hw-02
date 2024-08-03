@@ -1,0 +1,20 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.timer{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.field{
+    display: inline-flex;
+    align-items: center;
+    flex-flow   : column nowrap;
+}
+
+.value{
+    font-size: 40px;
+}
