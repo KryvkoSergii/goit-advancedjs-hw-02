@@ -1,20 +1,21 @@
-body {
+.timer-section {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
 }
 
-.timer {
+.timer-section .timer {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
 }
 
-.field {
+.timer-section .field {
     display: inline-flex;
     align-items: center;
     flex-flow: column nowrap;
+    padding: 10px;
 }
 
-.value {
+.timer-section .value {
     font-size: 40px;
 }

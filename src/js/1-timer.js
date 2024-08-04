@@ -4,8 +4,8 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
 let selectedDate;
-const startBtn = document.querySelector("button");
-const selector = document.querySelector("input#datetime-picker");
+const startBtn = document.querySelector(".timer-section button");
+const selector = document.querySelector(".timer-section input#datetime-picker");
 
 const daysFiled = document.querySelectorAll('[data-days]');
 const hoursFiled = document.querySelectorAll('[data-hours]');
@@ -54,8 +54,6 @@ const options = {
     },
 };
 
-flatpickr(selector, options);
-
 function formatNumber(value) {
     const val = value.toString();
     return val.length === 1 ? "0" + val : val;
@@ -76,6 +74,8 @@ function renderNumbers() {
         startBtn.disabled = false;
     }
 }
+
+flatpickr(selector, options);
 
 startBtn.addEventListener("click", () => {
     startBtn.disabled = true;
