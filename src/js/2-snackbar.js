@@ -1,11 +1,11 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-const mainForm = document.querySelectorAll(".snackbar-section form")[0];
-const btn = document.querySelectorAll(".snackbar-section button")[0];
+const mainForm = document.querySelectorAll("form")[0];
+const btn = document.querySelectorAll("button")[0];
 
 function makeTimer(delay, selectedRadioBtnValue) {
-    console.log(delay + selectedRadioBtnValue);
+    
     new Promise((resolve, reject) => {
         setTimeout(() => {
             if (selectedRadioBtnValue === "fulfilled") {

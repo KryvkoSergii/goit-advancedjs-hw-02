@@ -1,15 +1,15 @@
-.snackbar-section {
+body {
     width: auto;
 }
 
-.snackbar-section form {
+form {
 width: 30%;
 }
 
-.snackbar-section label{
+label{
     padding: 10px;
 }
 
-.snackbar-section button{
+button{
     margin: 10px;
 }
