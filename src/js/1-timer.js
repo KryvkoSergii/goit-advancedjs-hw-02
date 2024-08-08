@@ -13,6 +13,8 @@ const minutesFiled = document.querySelectorAll('[data-minutes]');
 const secondField = document.querySelectorAll('[data-seconds]');
 let timerId;
 
+startBtn.disabled = true;
+
 function convertMs(ms) {
     // Number of milliseconds per unit of time
     const second = 1000;
@@ -73,11 +75,12 @@ function renderNumbers() {
         secondField[0].innerText = formatNumber(calculated['seconds']);
     } else {
         clearInterval(timerId);
-        startBtn.disabled = false;
+        selector.disabled = false;
     }
 }
 
 startBtn.addEventListener("click", () => {
     startBtn.disabled = true;
+    selector.disabled = true;
     timerId = setInterval(renderNumbers, 1000);
 });
